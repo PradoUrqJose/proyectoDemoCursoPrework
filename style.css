@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div,img,h1,p,a{
+    position: absolute;
+    cursor:pointer; 
+    cursor: hand;
+}
+
+.fondo{
+    display: flex;
+    position: relative;
+    height: 900px;
+    width: 600px;
+    background-color: rgb(34, 32, 32);
+    border-radius: 50px;
+    justify-content: center;
+    box-shadow: 10px 4px 15px rgb(56, 56, 56);
+    overflow: hidden;
+    cursor: default;
+}
+.img-dark{
+    opacity: 0.6;
+    width: 100%;
+}
+.img-dark:hover{
+    opacity: 0.7;
+}
+.perfil-foto{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0.308)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY60DtU-Zlb2Mhfx9Vs-eIwCFis6zoCPsvqg&usqp=CAU);
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #ccc;
+    top: 190px;
+}
+.perfil-foto:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.203),rgba(0, 0, 0, 0.203)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY60DtU-Zlb2Mhfx9Vs-eIwCFis6zoCPsvqg&usqp=CAU);
+
+}
+h1{
+    color: aliceblue;
+    font-family: 'Carter One', cursive;
+    font-weight: lighter;
+    font-size: 33px;
+    top: 410px;
+}
+h1:hover{
+    color: rgb(111, 127, 151);
+}
+.subtitulo{
+    color: aliceblue;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    font-size: 13px;
+    top: 465px;  
+
+}
+.subtitulo:hover{
+    color: rgb(111, 127, 151);
+}
+.seccion{
+    top: 515px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: space-between; 
+}
+.seccion1{
+    position: relative;
+    display: flex;
+    color: antiquewhite;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    cursor: default;
+}
+
+.description-cont{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    top: 560px;
+    justify-content: space-between;
+    text-align: center;
+}
+.description{
+    position: relative;
+    display: flex;
+    color: antiquewhite;
+    border: 1px solid rgba(204, 204, 204, 0.096);
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    background-color: rgb(49, 47, 47);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.description:hover{
+    color: rgb(166, 252, 255);
+    background-color: rgba(129, 129, 129, 0.5);
+}
+.follow{
+    display: flex;
+    color: rgba(177, 175, 172, 0.623);
+    background-color: rgb(16, 43, 65);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bangers', cursive;
+    font-size: 70px;
+    height: 190px ;
+    width: 100%;
+    top: 710px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+.follow:hover{
+
+    color: rgba(214, 170, 104, 0.623);
+    background-color: rgba(43, 90, 129, 0.575);
+
+}
+@media(max-height:980px){
+.fondo{
+    height: 520px;
+    width: 300px;
+    border-radius: 40px;
+}
+.perfil-foto{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    top: 109.78px;
+}
+h1{
+    font-size: 19.07px;
+    top: 223.88px;
+}
+.subtitulo{
+    font-size: 12.51px;
+    top: 258.67px;  
+
+}
+.seccion{
+    top: 287.5px;
+    display: flex;
+    height: 27.1px;
+}
+.seccion1{
+    font-size: 13px;
+}
+
+.description-cont{
+    height: 86.67px;
+    top: 323.5px;
+}
+.description{
+    font-size: 17.3px;
+}
+.follow{
+    font-size: 40.4px;
+    height: 109.778px ;
+    top: 410.3px;
+}
+}
