@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 body{
+    margin: 0;
+}
+section{
+    height: 100vh;
+}
+section{
     background-color: black;
     display: flex;
     justify-content: center;
